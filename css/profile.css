@@ -1,0 +1,93 @@
+body{
+    background-color: #CED5DF;
+    font-family: 'Poppins', sans-serif;
+}
+.left-card,
+.right-card {
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.right-card-header{
+    background-color: #F8F9FB;
+}
+.content {
+            display: none;
+        }
+
+.content.active {
+        display: block;
+}
+
+/* Nav Button states */
+.right-card-header .btn.active,
+.right-card-header .btn.active:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid hsl(10, 100%, 55%);
+    color: #ff3d17;
+    box-shadow: none !important; /* Remove the shadow on click */
+    outline: none !important; /* Remove the outline on focus */
+}
+
+.right-card-header .btn.active i {
+    margin-right: 5px;
+}
+
+/* User info */
+.user-info{
+    width: 50%;
+    background-color: #6a6a6a !important;
+    border-radius: 12px;
+    color: #fff;
+}
+/* Button Styling */
+.cta-button{
+    background-color: #ff3d17;
+    color: white;
+    transition: .5s;
+}
+.cta-button:hover{
+background-color: #fff;
+    color: #ff3d17;
+    transition: .5s;
+    border: 1px solid #ff3d17;
+}
+/* Desktop styles */
+@media (min-width: 768px) {
+    .left-card {
+        width: 30%;
+    }
+
+    .right-card {
+        width: 65%;
+    }
+}
+
+/* Mobile and tablet styles */
+@media (max-width: 767px) {
+    .left-card,
+    .right-card {
+        width: 90% !important;
+    }
+    .content{
+        padding: 20px;
+    }
+    .user-info{
+    width: 100%;
+    background-color: #6a6a6a !important;
+    border-radius: 12px;
+    color: #fff;
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.nav-btn{
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+}
